@@ -10,10 +10,12 @@
 // Grays
 // -------------------------
 @black:                 #000;
+@graySuperDark:         #111;
 @grayDarker:            #222;
 @grayDark:              #333;
 @gray:                  #555;
 @grayLight:             #999;
+@grayBorder:            #aaa;
 @grayLighter:           #eee;
 @white:                 #fff;
 
@@ -32,29 +34,37 @@
 
 // Scaffolding
 // -------------------------
-@bodyBackground:        @white;
 @textColor:             @grayDark;
+
+// Others
+// -------------------------
+@backgroundColor:       #e3decc;
+@bodyBackground:        #59534e;
+@itemBackground:        #c6baa2;
+@commentBackground:     #ddd8c7;
+@spoilerColor:          #f1eedf;
+@tableBorderColor:      lighten(@itemBackground, 10%);
 
 
 // Links
 // -------------------------
-@linkColor:             #08c;
-@linkColorHover:        darken(@linkColor, 15%);
+@linkColor:             darken(#08c, 10%);
+@linkColorHover:        @red;
 
 
 // Typography
 // -------------------------
-@sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+@sansFontFamily:        "Trebuchet MS", Helvetica, Arial, sans-serif;
 @serifFontFamily:       Georgia, "Times New Roman", Times, serif;
-@monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
+@monoFontFamily:        Monaco, Consolas, "DejaVu Sans Mono", "Courier New", monospace;
 
-@baseFontSize:          14px;
+@baseFontSize:          15px;
 @baseFontFamily:        @sansFontFamily;
-@baseLineHeight:        20px;
+@baseLineHeight:        23px;
 @altFontFamily:         @serifFontFamily;
 
-@headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
-@headingsFontWeight:    bold;    // instead of browser default, bold
+@headingsFontFamily:    'Berkshire Swash'; // empty to use BS default, @baseFontFamily
+@headingsFontWeight:    normal;    // instead of browser default, bold
 @headingsColor:         inherit; // empty to use BS default, @textColor
 
 
@@ -88,11 +98,11 @@
 @btnBackgroundHighlight:            darken(@white, 10%);
 @btnBorder:                         #ccc;
 
-@btnPrimaryBackground:              @linkColor;
+@btnPrimaryBackground:              #008ab9;
 @btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 20%);
 
-@btnInfoBackground:                 #5bc0de;
-@btnInfoBackgroundHighlight:        #2f96b4;
+@btnInfoBackground:                 #2d82b8;
+@btnInfoBackgroundHighlight:        #1579a2;
 
 @btnSuccessBackground:              #62c462;
 @btnSuccessBackgroundHighlight:     #51a351;
@@ -151,8 +161,9 @@
 
 // Sprite icons path
 // -------------------------
-@iconSpritePath:          "../img/glyphicons-halflings.png";
-@iconWhiteSpritePath:     "../img/glyphicons-halflings-white.png";
+@imageDirectory:          "../img";
+@iconSpritePath:          "@{imageDirectory}/glyphicons-halflings.png";
+@iconWhiteSpritePath:     "@{imageDirectory}/glyphicons-halflings-white.png";
 
 
 // Input placeholder text color
