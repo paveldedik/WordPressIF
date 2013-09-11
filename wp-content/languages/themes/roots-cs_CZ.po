@@ -1,0 +1,332 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: RootsTheme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-08-28 11:22-0300\n"
+"PO-Revision-Date: 2012-10-23 18:49+0100\n"
+"Last-Translator: Pavel <de.paulcz@gmail.com>\n"
+"Language-Team:  <de.paulcz@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Language: Czech\n"
+"X-Poedit-Country: CZECH REPUBLIC\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ./templates\n"
+"X-Poedit-SearchPath-2: ./lib\n"
+
+#: 404.php:5
+msgid "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable."
+msgstr "Stránka, kterou hledáš byla odstraněna, přejmenována, nebo je dočasně nedostupná."
+
+#: 404.php:8
+msgid "Please try the following:"
+msgstr "Prosím, zkus následující:"
+
+#: 404.php:10
+msgid "Check your spelling"
+msgstr "Zkontroluj pravopis"
+
+#: 404.php:11
+#, php-format
+msgid "Return to the <a href=\"%s\">home page</a>"
+msgstr "Zpět na <a href=\"%s\">domovskou stránku</a>"
+
+#: 404.php:12
+msgid "Click the <a href=\"javascript:history.back()\">Back</a> button"
+msgstr "Klikni na tlačítko <a href=\"javascript:history.back()\">zpět</a>"
+
+#: functions.php:28
+msgid "Primary Navigation"
+msgstr "Hlavní navigace"
+
+#: lib/activation.php:32
+#: lib/activation.php:33
+msgid "Theme Activation"
+msgstr "Aktivace tématu"
+
+#: lib/activation.php:72
+#, php-format
+msgid "%s Theme Activation"
+msgstr "Aktivace tématu %s"
+
+#: lib/activation.php:87
+#: lib/activation.php:89
+msgid "Create static front page?"
+msgstr "Vytvořit statickou titulní stranu?"
+
+#: lib/activation.php:91
+#: lib/activation.php:104
+#: lib/activation.php:117
+#: lib/activation.php:130
+#: lib/activation.php:143
+msgid "Yes"
+msgstr "Ano"
+
+#: lib/activation.php:92
+#: lib/activation.php:105
+#: lib/activation.php:118
+#: lib/activation.php:131
+#: lib/activation.php:144
+msgid "No"
+msgstr "Ne"
+
+#: lib/activation.php:95
+msgid "Create a page called Home and set it to be the static front page"
+msgstr "Vytvořit stránku Domů a nastavit ji jako statickou titulní stránku"
+
+#: lib/activation.php:100
+msgid "Change permalink structure?"
+msgstr "Change permalink structure?"
+
+#: lib/activation.php:102
+msgid "Update permalink structure?"
+msgstr "Update permalink structure?"
+
+#: lib/activation.php:108
+msgid "Change permalink structure to /&#37;postname&#37;/"
+msgstr "Change permalink structure to /&#37;postname&#37;/"
+
+#: lib/activation.php:113
+msgid "Change uploads folder?"
+msgstr "Change uploads folder?"
+
+#: lib/activation.php:115
+msgid "Update uploads folder?"
+msgstr "Update uploads folder?"
+
+#: lib/activation.php:121
+msgid "Change uploads folder to /assets/ instead of /wp-content/uploads/"
+msgstr "Change uploads folder to /assets/ instead of /wp-content/uploads/"
+
+#: lib/activation.php:126
+#: lib/activation.php:128
+msgid "Create navigation menu?"
+msgstr "Vytvořit navigaci?"
+
+#: lib/activation.php:134
+msgid "Create the Primary Navigation menu and set the location"
+msgstr "Vytvořit primární navigaci a nastavit umístění"
+
+#: lib/activation.php:139
+#: lib/activation.php:141
+msgid "Add pages to menu?"
+msgstr "Přidat stranky do menu?"
+
+#: lib/activation.php:147
+msgid "Add all current published pages to the Primary Navigation"
+msgstr "Přidat všechny současné publikované stránky do primární navigace"
+
+#: lib/cleanup.php:404
+msgid "Continued"
+msgstr "celý článek"
+
+#: lib/htaccess.php:26
+#, php-format
+msgid "Please make sure your <a href=\"%s\">.htaccess</a> file is writable "
+msgstr "Ujisti se, že soubor <a href=\"%s\">.htaccess</a> má povolená práva pro zápis"
+
+#: lib/template-tags.php:5
+#, php-format
+msgid "Posted on %s at %s."
+msgstr "Článek vyšel na %s v %s."
+
+#: lib/template-tags.php:6
+msgid "Written by"
+msgstr "Napsal(a)"
+
+#: lib/widgets.php:6
+msgid "Primary Sidebar"
+msgstr "Primární postranní panel"
+
+#: lib/widgets.php:14
+msgid "Footer"
+msgstr "Patička"
+
+#: lib/widgets.php:30
+msgid "Use this widget to add a vCard"
+msgstr "Použij tento widget pro přidání vCard"
+
+#: lib/widgets.php:31
+msgid "Roots: vCard"
+msgstr "Roots: vCard"
+
+#: lib/widgets.php:58
+msgid "vCard"
+msgstr "vCard"
+
+#: lib/widgets.php:124
+msgid "Title (optional):"
+msgstr "Nadpis (volitelný):"
+
+#: lib/widgets.php:128
+msgid "Street Address:"
+msgstr "Adresa ulice"
+
+#: lib/widgets.php:132
+msgid "City/Locality:"
+msgstr "Město/Lokace"
+
+#: lib/widgets.php:136
+msgid "State/Region:"
+msgstr "Stát/Region"
+
+#: lib/widgets.php:140
+msgid "Zipcode/Postal Code:"
+msgstr "PSČ"
+
+#: lib/widgets.php:144
+msgid "Telephone:"
+msgstr "Telefon:"
+
+#: lib/widgets.php:148
+msgid "Email:"
+msgstr "Email:"
+
+#: templates/comments.php:7
+#, php-format
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr "<cite class=\"fn\">%s</cite>"
+
+#: templates/comments.php:8
+#, php-format
+msgid "%1$s"
+msgstr "%1$s"
+
+#: templates/comments.php:9
+msgid "(Edit)"
+msgstr "(Upravit)"
+
+#: templates/comments.php:15
+msgid "Your comment is awaiting moderation."
+msgstr "Tvůj komentář čeká na moderaci."
+
+#: templates/comments.php:32
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Tento článek je chráněný heslem. Zadej heslo pro zobrazení komentářů."
+
+#: templates/comments.php:49
+msgid "&larr; Older comments"
+msgstr "&larr; Starší komentáře"
+
+#: templates/comments.php:50
+msgid "Newer comments &rarr;"
+msgstr "Novější komentáře &rarr;"
+
+#: templates/comments.php:58
+#: templates/comments.php:68
+msgid "Comments are closed."
+msgstr "Komentáře nejsou povoleny."
+
+#: templates/comments.php:75
+msgid "Leave a Reply"
+msgstr "Odpovědět"
+
+#: templates/comments.php:75
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr "Reagovat na uživatele %s"
+
+#: templates/comments.php:78
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "Abys mohl komentovat, musíš se <a href=\"%s\">přihlásit</a>."
+
+#: templates/comments.php:82
+#, php-format
+msgid "Logged in as <a href=\"%s/wp-admin/profile.php\">%s</a>."
+msgstr "Přihlášený jako <a href=\"%s/wp-admin/profile.php\">%s</a>."
+
+#: templates/comments.php:82
+msgid "Log out of this account"
+msgstr "Odhlásit se z tohoto účtu"
+
+#: templates/comments.php:82
+msgid "Log out &raquo;"
+msgstr "Odhlásit se &raquo;"
+
+#: templates/comments.php:84
+msgid "Name"
+msgstr "Uživatelské jméno"
+
+#: templates/comments.php:84
+#: templates/comments.php:86
+msgid " (required)"
+msgstr " (požadováno)"
+
+#: templates/comments.php:86
+msgid "Email (will not be published)"
+msgstr "Email (nebude zveřejněn)"
+
+#: templates/comments.php:88
+msgid "Website"
+msgstr "Webová stránka"
+
+#: templates/comments.php:91
+msgid "Comment"
+msgstr "Komentář"
+
+#: templates/comments.php:93
+msgid "Submit Comment"
+msgstr "Odeslat komentář"
+
+#: templates/content-single.php:11
+msgid "Pages:"
+msgstr "Stránky:"
+
+#: templates/content.php:4
+msgid "Sorry, no results were found."
+msgstr "Nebyly nalezeny žádné články."
+
+#: templates/content.php:26
+msgid "&larr; Older posts"
+msgstr "&larr; Starší články"
+
+#: templates/content.php:27
+msgid "Newer posts &rarr;"
+msgstr "Novější články &rarr;"
+
+#: templates/page-header.php:8
+msgid "Latest Posts"
+msgstr "Nové články"
+
+#: templates/page-header.php:17
+#, php-format
+msgid "Daily Archives: %s"
+msgstr "Daily Archives: %s"
+
+#: templates/page-header.php:19
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr "Monthly Archives: %s"
+
+#: templates/page-header.php:21
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr "Yearly Archives: %s"
+
+#: templates/page-header.php:25
+#, php-format
+msgid "Author Archives: %s"
+msgstr "Author Archives: %s"
+
+#: templates/page-header.php:30
+#, php-format
+msgid "Search Results for %s"
+msgstr "Výsledky pro dotaz %s"
+
+#: templates/page-header.php:32
+msgid "File Not Found"
+msgstr "Stránka nebyla nenalezena"
+
+#: templates/searchform.php:2
+msgid "Search for:"
+msgstr "Hledat:"
+
+#: templates/searchform.php:3
+#: templates/searchform.php:4
+msgid "Search"
+msgstr "Hledat"
+
