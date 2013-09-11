@@ -49,6 +49,23 @@ pre {
   padding: 10px 15px !important;
 }
 
+// Article
+// ------------------------------------------------------------------------- //
+
+article {
+  overflow: auto;
+  margin-bottom: 20px;
+  h2.entry-title {
+    font-size: @fontSizeLarge + 5;
+    line-height: 30px;
+    margin-top: 0;
+  }
+  .display-posts-listing {
+    font-size: @fontSizeLarge;
+    font-family: @sansFontFamily
+  }
+}
+
 // Buttons, Inputs and Textareas
 // ------------------------------------------------------------------------- //
 
@@ -107,6 +124,19 @@ pre {
   min-width: 110px;
   border-radius: 3px;
   .box-shadow(0 2px 5px rgba(0,0,0,0.2));
+}
+
+a.thumbnail {
+  float: left;
+  margin-right: 20px;
+  border: 1px solid @grayLight;
+  background-color: @spoilerColor;
+  .border-radius(0);
+  .box-shadow(none);
+  &:hover {
+    border-color: @gray;
+    .box-shadow(0 1px 4px rgba(105,105,105,0.25))
+  }
 }
 
 textarea,
@@ -214,6 +244,12 @@ input {
 
 // Content, Panel and Footer
 // ------------------------------------------------------------------------- //
+
+.page-header {
+  margin-top: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
 
 body > .bs-docs-canvas > .container {
   padding-top: 20px;
