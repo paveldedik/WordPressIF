@@ -8,6 +8,13 @@
             wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav'));
           endif;
         ?>
+        <ul class="nav pull-right">
+          <li class="menu-forum">
+            <a href="<?php echo home_url(); ?>/forum/">
+              <i class="icon-comment icon-white"></i> <span>Fórum</span>
+            </a>
+          </li>
+        </ul>
       </nav>
     </div>
   </div>
