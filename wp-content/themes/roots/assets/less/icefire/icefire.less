@@ -212,6 +212,7 @@ input {
   }
   &.search-query {
     min-height: 30px;
+    margin-bottom: 10px;
   }
 }
 
@@ -225,7 +226,7 @@ input {
   padding-bottom: 3px;
 }
 
-// Main Navigation
+// Navigation
 // ------------------------------------------------------------------------- //
 
 .navbar-fixed-top {
@@ -239,6 +240,23 @@ input {
   }
   .search-query {
     min-width: 260px;
+  }
+}
+
+.wp-pagenavi {
+  text-align: center;
+  a, span {
+    .btn;
+    margin: 0 1px;
+  }
+  span,
+  span:hover,
+  span:focus,
+  span:active {
+    cursor: default;
+    background-color: @grayLighter;
+    background-image: none;
+    .box-shadow(none);
   }
 }
 
