@@ -35,4 +35,8 @@ $(function() {
             }, $duration);
         }
     );
- });
+});
+
+$(document).ready(function(){
+    $('.carousel').carousel()
+})

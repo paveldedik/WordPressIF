@@ -14,7 +14,15 @@
   ?>
 
   <div class="container" id="bootstrap-container" role="document">
-    <div class="row">
+
+    <div class="row" id="head-row">
+      <div class="<?php echo roots_main_class(); ?>" id="carousel">
+        <!-- Carrousel -->
+        <?php get_template_part('templates/carousel'); ?>
+      </div>
+    </div>
+
+    <div class="row" id="body-row">
       <div class="<?php echo roots_main_class(); ?>" id="content" role="main">
         <?php include roots_template_path(); ?>
       </div><!-- /.main -->
