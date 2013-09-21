@@ -17,10 +17,6 @@ a:hover {
   text-decoration: none;
 }
 
-ol, ul {
-  margin: 0;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
 }
@@ -63,6 +59,9 @@ article {
   .display-posts-listing {
     font-size: @fontSizeLarge;
     font-family: @sansFontFamily
+  }
+  &.post {
+    min-height: 100px;
   }
 }
 
@@ -380,6 +379,20 @@ span.spoiler {
   }
 }
 
+.comments-link > a {
+  background: transparent url("@{imageDirectory}/comment.png") no-repeat;
+  width: 35px;
+  height: 35px;
+  display: block;
+  text-align: center;
+  line-height: 29px;
+  font-size: @baseFontSize - 3px;
+  color: @backgroundColor;
+  span {
+    padding-right: 1px;
+  }
+}
+
 // Panel Panes
 // ------------------------------------------------------------------------- //
 
@@ -462,6 +475,11 @@ span.spoiler {
   box-shadow: 0px 0px 20px #333;
   background: @backgroundColor url("@{imageDirectory}/bg-sidebar.jpg") repeat-y;
   background-position: 790px 0;
+  margin-top: 30px;
+
+  &:first-child {
+    margin-top: 110px;
+  }
 }
 
 #content {
@@ -472,6 +490,10 @@ span.spoiler {
 #panel {
   padding: 25px 0 40px 30px;
   width: 325px;
+
+  ul, ol {
+    margin: 0;
+  }
 }
 
 #panel,
@@ -484,13 +506,24 @@ span.spoiler {
 }
 
 #head-row {
-  background-image: none;
+  background: url("@{imageDirectory}/slider-right.jpg") no-repeat right;
   min-height: 0;
-  margin-top: 110px;
-  margin-bottom: 30px;
-  .span8 {
-    margin: 0;
-    width: auto;
+}
+
+#carousel {
+  margin: 0;
+  width: auto;
+}
+
+#home-right {
+  max-height: 220px;
+  overflow: hidden;
+  h3 {
+    margin: 7px 0 0;
+  }
+  li, p {
+    font-size: @baseFontSize - 1px;
+    line-height: @baseLineHeight - 2px;
   }
 }
 
@@ -507,6 +540,16 @@ span.spoiler {
   }
   #panel {
     width: 300px;
+  }
+  #carousel {
+    width: 720px;
+  }
+  #home-right {
+    max-height: 197px;
+    h3 {
+      font-size: @fontSizeLarge;
+      line-height: @baseLineHeight + 10;
+    }
   }
   .row,
   .container,
@@ -525,6 +568,17 @@ span.spoiler {
   #panel {
     width: 268px;
   }
+  #carousel {
+    width: 670px;
+  }
+  #home-right {
+    margin-top: 18px;
+    margin-left: 10px;
+    max-height: 183px;
+    h3 {
+      display: none;
+    }
+  }
   .row,
   .container,
   .navbar .container {
@@ -535,6 +589,10 @@ span.spoiler {
 @media screen and (max-width: 1020px) {
   .row {
     background-image: none;
+    margin-top: 110px;
+  }
+  #head-row {
+    display: none;
   }
   #panel,
   #content {
@@ -610,4 +668,3 @@ span.spoiler {
     }
   }
 }
-

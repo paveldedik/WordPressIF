@@ -15,12 +15,17 @@
 
   <div class="container" id="bootstrap-container" role="document">
 
-    <div class="row" id="head-row">
-      <div class="<?php echo roots_main_class(); ?>" id="carousel">
-        <!-- Carrousel -->
-        <?php get_template_part('templates/carousel'); ?>
+    <?php if (is_home() || is_archive() || is_search()) { ?>
+      <div class="row" id="head-row">
+        <div class="<?php echo roots_main_class(); ?>" id="carousel">
+          <!-- Carrousel -->
+          <?php get_template_part('templates/carousel'); ?>
+        </div>
+        <div class="<?php echo roots_sidebar_class(); ?>" id="home-right">
+          <?php dynamic_sidebar('home-right'); ?>
+        </div>
       </div>
-    </div>
+    <?php } ?>
 
     <div class="row" id="body-row">
       <div class="<?php echo roots_main_class(); ?>" id="content" role="main">
