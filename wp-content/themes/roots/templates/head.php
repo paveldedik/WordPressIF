@@ -7,9 +7,8 @@
   <meta charset="utf-8">
   <title><?php wp_title('|', true, 'right'); ?></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <?php wp_head(); ?>
-
+  <script src="<?php echo get_template_directory_uri() . '/assets/js/google.js'; ?>" type="text/javascript"></script>
   <link href='http://fonts.googleapis.com/css?family=Berkshire+Swash&subset=latin,latin-ext'
         rel='stylesheet' type='text/css'>
   <link rel="alternate" type="application/rss+xml" title="<?php echo get_bloginfo('name'); ?> Feed" href="<?php echo home_url(); ?>/feed/">
