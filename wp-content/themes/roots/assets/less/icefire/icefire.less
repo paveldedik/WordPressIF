@@ -63,10 +63,12 @@ article {
   &.post {
     min-height: 100px;
   }
-  span.google,
-  span.twitter,
-  span.facebook {
-    float: right;
+  #post-socialbuttons {
+    margin-top: 20px;
+    text-align: center;
+    .fb-like {
+      padding-right: 30px;
+    }
   }
 }
 
@@ -352,6 +354,46 @@ section.widget {
       }
     }
   }
+  &.widget_categoryposts,
+  &.widget_pretty_pinterest_pins {
+    li {
+      padding: 0;
+      display: inline;
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+  &.widget_categoryposts {
+    .post-title {
+      display: none;
+    }
+    img {
+      padding: 4px;
+      margin: 2px;
+      border: 1px solid @grayLight;
+      background-color: @spoilerColor;
+      &:hover {
+        border-color: @gray;
+        .box-shadow(0 1px 4px rgba(105,105,105,0.25))
+      }
+    }
+  }
+  &.widget_pretty_pinterest_pins {
+    .pretty-pinterest-image {
+      max-width: 140px !important;
+      margin: 2px !important;
+      display: inline-block;
+      a {
+        padding: 4px !important;
+      }
+    }
+    li.pretty-pinterest-follow-me {
+      display: block;
+      text-align: center;
+      margin-top: 10px !important;
+    }
+  }
 }
 
 // Comments and Discussion
@@ -592,6 +634,13 @@ span.spoiler {
   .container,
   .navbar .container {
     width: 980px;
+  }
+  section.widget {
+    &.widget_pretty_pinterest_pins {
+      .pretty-pinterest-image {
+        max-width: 120px !important;
+      }
+    }
   }
 }
 
