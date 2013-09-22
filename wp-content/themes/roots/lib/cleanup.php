@@ -218,7 +218,7 @@ add_filter('excerpt_more', 'roots_excerpt_more');
 function roots_remove_self_closing_tags($input) {
   return str_replace(' />', '>', $input);
 }
-add_filter('get_avatar',          'roots_remove_self_closing_tags'); // <img />
+// add_filter('get_avatar',          'roots_remove_self_closing_tags'); // <img />
 add_filter('comment_id_fields',   'roots_remove_self_closing_tags'); // <input />
 add_filter('post_thumbnail_html', 'roots_remove_self_closing_tags'); // <img />
 
